@@ -1,7 +1,7 @@
 # EFRE 
 Causal Discovery
 
-This is the code for the paper  'Flow-based Perturbation for Cause-effect Inference' (https://dl.acm.org/doi/abs/10.1145/3511808.3557326).
+This is the code for the CIKM22 paper  'Flow-based Perturbation for Cause-effect Inference'. (https://dl.acm.org/doi/abs/10.1145/3511808.3557326).
 
 ## Requirements
 Python 3.8
