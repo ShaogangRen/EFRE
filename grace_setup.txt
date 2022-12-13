@@ -1,0 +1,27 @@
+cd $SCRATCH
+
+#### load R
+##!! Not work#   module  load GCC/11.2.0  OpenMPI/4.1.1  R/4.2.0
+
+###load python
+##ml GCCcore/10.2.0 Python/3.8.6
+## module save dl
+
+
+ml GCCcore/10.2.0 Python/3.8.6
+
+##module restore dl
+##source vfgenv/bin/activate
+source $SCRATCH/vfgenv/bin/activate
+
+#### pip list #######
+pip install GPy
+pip install matplotlib
+pip install igraph
+
+
+===================
+# As Pytorch comes with CUDA libraries, we don't need to load CUDA modules.
+# the following two modules are sufficient for PyTorch
+## ml GCCcore/10.2.0 Python/3.8.6
+
