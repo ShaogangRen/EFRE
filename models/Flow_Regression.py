@@ -310,20 +310,4 @@ class FlowGraph(PairwiseModel):
             return -1
 
 
-# ### get data #####
-# data, graph = cdt.data.load_dataset('sachs')
-# dt = []
-# max_epoch = 2
-#
-# keys = data.keys()
-# for k in keys:
-#     dt.append(data[k])
-# data_graph = np.transpose(np.array(dt))
-#
-# fg = FlowGraphCore(max_epoch = max_epoch, lr =0.000001, data = data_graph, w_init_sigma=0.000001)
-# avg_llk = fg.train()
-# fg.causal_graph1()
-#
-
-
 
