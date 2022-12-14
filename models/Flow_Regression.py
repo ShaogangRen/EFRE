@@ -128,7 +128,6 @@ class Flow_Regr(nn.Module):
         tdata = torch.from_numpy(npdata).float()
         if torch.cuda.is_available():
             tdata = tdata.cuda()
-        '''==== step1: forward and backward for JJ matrix =='''
         a,b = 0,1
 
         xa = tdata[:, a]
@@ -138,7 +137,6 @@ class Flow_Regr(nn.Module):
         for i in range(sampling_size):
             ta = tdata[i,:].repeat([sampling_size, 1])
             ta[:, a] = xa
-            '''===x0 changes, x1 fixed ======='''
             z, ndelta_logp, _ = self.cell(ta)
             dist = dists.Normal(0, self.sigma)
             log_pz = torch.sum(dist.log_prob(z), 1)
@@ -171,7 +169,6 @@ class Flow_Regr(nn.Module):
         for i in range(sampling_size):
             tb = tdata[i,:].repeat([sampling_size, 1])
             tb[:, b] = xb
-            '''===x0 is fixed, x1 changes ======='''
             z, ndelta_logp, _ = self.cell(tb)
             dist = dists.Normal(0, self.sigma)
             log_pz = torch.sum(dist.log_prob(z), 1)
@@ -198,7 +195,7 @@ class Flow_Regr(nn.Module):
         tdata = torch.from_numpy(npdata).float()
         if torch.cuda.is_available():
             tdata = tdata.cuda()
-        '''==== step1: forward and backward for JJ matrix =='''
+
         a,b = 0,1
 
         xa = tdata[:, a]
