@@ -82,7 +82,7 @@ def grid_search():
     random.seed(5)
 
 
-    flow_depth = [2] # 5], 6
+    flow_depth = [2] # 3], 4
     lr = [0.002] # 0.003]
     max_epoch = [800] #, 1000] #2500]
     w_init_sigma = [0.02] #
