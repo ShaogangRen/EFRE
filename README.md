@@ -1,7 +1,7 @@
 # EFRE 
 Causal Discovery
 
-This is the code for the CIKM22 paper  'Flow-based Perturbation for Cause-effect Inference'. (https://dl.acm.org/doi/abs/10.1145/3511808.3557326).
+This is the code for the CIKM-22 paper  'Flow-based Perturbation for Cause-effect Inference'. (https://dl.acm.org/doi/abs/10.1145/3511808.3557326).
 
 ## Requirements
 Python 3.8
@@ -18,7 +18,7 @@ python GridS_EFRE.py
 You can modify GridS_EFRE.py to reset the dataset, learning rate, etc. You also can use it to do
 hyperparameter search.
 
-For the Tuebingen dataset (in CDT Toolbox), the setup in GridS_main.py can 
+For the Tuebingen dataset (in CDT Toolbox), the setup in GridS_EFRE.py can 
 achieve  0.92 or better accuracy. 
 
 

@@ -83,8 +83,8 @@ def grid_search():
 
 
     flow_depth = [2] # 5], 6
-    lr = [0.002] # 0.00005]
-    max_epoch = [800] #, 2000] #2500]
+    lr = [0.002] # 0.003]
+    max_epoch = [800] #, 1000] #2500]
     w_init_sigma = [0.02] #
     data_sets = ["tuebingen"] #["sachs"] ##["dream4-1"] # "tuebingen", "sachs",  "dream4-2", "dream4-3", "dream4-1"
     sample_ns = [200]
