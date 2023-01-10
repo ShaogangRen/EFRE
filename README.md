@@ -19,7 +19,7 @@ You can modify GridS_EFRE.py to reset the dataset, learning rate, etc. You also 
 hyperparameter search.
 
 For the Tuebingen dataset (in CDT Toolbox), the setup in GridS_EFRE.py can 
-achieve  0.92 or a better accuracy. 
+achieve an accuracy above 0.92. 
 
 
 Some of the code files were adapted from ffjord (https://github.com/rtqichen/ffjord).
