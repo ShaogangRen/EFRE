@@ -1,4 +1,4 @@
-# EFRE 
+# EFRE Bivariate Causal Discovery
 Causal Discovery
 
 This is the code for the CIKM-22 paper  'Flow-based Perturbation for Cause-effect Inference'. (https://dl.acm.org/doi/abs/10.1145/3511808.3557326).
